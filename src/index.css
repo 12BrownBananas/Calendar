@@ -1,0 +1,94 @@
+
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.grid-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.dayOfWeekMarker {
+	background: #fff;
+	border: 1px solid #999;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	height: 20px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	width: 100px;
+}
+
+.reminder {
+	margin-top: 1px;
+	font-size: 12px;
+	width: 100%;
+}
+
+.square {
+	position: relative;
+	background: #fff;
+	border: 1px solid #999;
+	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	height: 100px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	width: 100px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.square:hover {
+	overflow-y: auto;
+}
+
+button {
+	position: relative;
+}
+button span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.addButton {
+	position:absolute;
+    top:0;
+    right:0;
+	height: 16px;
+	line-height: 0px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square--blank {
+	background: #D3D3D3;
+	color: gray;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.interface {
+  display: flex;
+  flex-direction: row;
+}
